@@ -7,8 +7,8 @@ $(document).ready(function() {
 	   var q;
 	   for(q = 1; q < 4; q++)
 	   {
-		$("#show" + q).on("click", {qnum: q}, showAnswer);
-		$("#next" + q).on("click",{qnum: q}, function(event) {
+		$("#show" + q).click({qnum: q}, showAnswer);
+		$("#next" + q).click({qnum: q}, function(event) {
 			$("#next" + event.data.qnum).hide();
 			$("#q" + event.data.qnum).hide();
 			$("#a" + event.data.qnum).hide();
